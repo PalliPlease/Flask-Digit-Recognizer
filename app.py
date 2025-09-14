@@ -1,4 +1,5 @@
 import numpy as np
+import os
 from flask import Flask, request, jsonify, render_template
 import tensorflow as tf
 from tensorflow.keras.models import load_model
@@ -40,6 +41,9 @@ def predict():
 
     except:
         print("Failed")
+        return render_template("index.html", prediction_text="Prediction failed.")
 
 if __name__ == "__main__":
-    flask_app.run(debug=True)
+    # flask_app.run(debug=True) #use when local
+    port = int(os.environ.get("PORT", 5000)) #this is for deployment
+    app.run(host="0.0.0.0", port=port) #this as well
