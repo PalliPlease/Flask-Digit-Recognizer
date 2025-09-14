@@ -3,4 +3,3 @@ numpy
 opencv-python
 tensorflow
 h5py
-os
