@@ -1,5 +1,6 @@
 Flask
 numpy
 opencv-python
-tensorflow
 h5py
+tensorflow
+
