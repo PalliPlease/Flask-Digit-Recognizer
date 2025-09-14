@@ -1,5 +1,5 @@
 Flask
-numpy==1.26.5
-opencv-python==4.9.1.26
-tensorflow==2.29.1
-h5py==3.9.0
+numpy
+opencv-python
+tensorflow
+h5py
