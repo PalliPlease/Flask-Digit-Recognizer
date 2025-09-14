@@ -46,4 +46,4 @@ def predict():
 if __name__ == "__main__":
     # flask_app.run(debug=True) #use when local
     port = int(os.environ.get("PORT", 5000)) #this is for deployment
-    app.run(host="0.0.0.0", port=port) #this as well
+    flask_app.run(host="0.0.0.0", port=port) #this as well
